@@ -1,0 +1,27 @@
+Algoritmo "soma_impares"
+
+Var
+
+   X, Y, troca, i, soma: inteiro
+
+Inicio
+
+      escreval("Digite dois números: ")
+      leia(X)
+      leia(Y)
+      
+      se X > Y entao
+         troca <- X
+         X <- Y
+         Y <- troca
+      fimse
+
+      soma <- 0
+      para i de X+1 ate Y-1 faca
+           se i % 2 <> 0 entao
+              soma <- soma + i
+           fimse
+      fimpara
+      
+      escreval("SOMA DOS ÍMPARES = ", soma)
+Fimalgoritmo
